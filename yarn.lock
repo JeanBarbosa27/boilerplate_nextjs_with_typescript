@@ -4497,6 +4497,11 @@ caniuse-lite@^1.0.30001035, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.300011
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001154.tgz#f3bbc245ce55e4c1cd20fa731b097880181a7f17"
   integrity sha512-y9DvdSti8NnYB9Be92ddMZQrcOe04kcQtcxtBx4NkB04+qZ+JUWotnXBJTmxlKudhxNTQ3RRknMwNU2YQl/Org==
 
+caniuse-lite@^1.0.30001093, caniuse-lite@^1.0.30001113:
+  version "1.0.30001384"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001384.tgz#029527c2d781a3cfef13fa63b3a78a6088e35973"
+  integrity sha512-BBWt57kqWbc0GYZXb47wTXpmAgqr5LSibPzNjk/AWMdmJMQhLqOl3c/Kd4OAU/tu4NLfYkMx8Tlq3RVBkOBolQ==
+
 capture-exit@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/capture-exit/-/capture-exit-2.0.0.tgz#fb953bfaebeb781f62898239dabb426d08a509a4"
@@ -13322,10 +13327,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^4.0.3:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.5.tgz#ae9dddfd1069f1cb5beb3ef3b2170dd7c1332389"
-  integrity sha512-ywmr/VrTVCmNTJ6iV2LwIrfG1P+lv6luD8sUJs+2eI9NLGigaN+nUQc13iHqisq7bra9lnmUSYqbJvegraBOPQ==
+typescript@^4.8.2:
+  version "4.8.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.8.2.tgz#e3b33d5ccfb5914e4eeab6699cf208adee3fd790"
+  integrity sha512-C0I1UsrrDHo2fYI5oaCGbSejwX4ch+9Y5jTQELvovfmFkK3HHSZJB8MSJcWLmCUBzQBchCrZ9rMRV6GuNrvGtw==
 
 uglify-js@^3.1.4:
   version "3.11.0"
