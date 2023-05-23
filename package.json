@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "build:prod": "NODE_ENV=production next build",
-    "build:dev": "NODE_ENV=development next build",
-    "generate": "yarn plop --plopfile ./generators/plopfile.js",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && next build",
+    "build:dev": "SET NODE_OPTIONS=--openssl-legacy-provider && NODE_ENV=development next build",
+    "build:prod": "SET NODE_OPTIONS=--openssl-legacy-provider && NODE_ENV=production next build",
+    "generate": "plop --plopfile ./generators/plopfile.js",
     "start": "next start",
     "lint": "eslint src --max-warnings=0",
     "test": "jest",
@@ -22,8 +22,8 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "yarn lint --fix",
-      "yarn test --findRelatedTests --bail"
+      "npm run lint --fix",
+      "npm run test --findRelatedTests --bail"
     ]
   },
   "dependencies": {
