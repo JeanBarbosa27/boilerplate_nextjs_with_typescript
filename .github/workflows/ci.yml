@@ -22,5 +22,8 @@ jobs:
       - name: Test
         run: npm run test
 
+      - name: Set Node options for open SSL Legacy
+        run: export NODE_OPTIONS=--openssl-legacy-provider,
+
       - name: Build
         run: npm run build

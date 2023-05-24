@@ -15,7 +15,14 @@ Basta abrir o terminal na sua máquina, acessar a pasta onde deseja criar o proj
 
 ## Rodando o projeto localmente
 
-Para visualizar as mudanças feitas no código localmente, rode o comando `npm run dev` e acesse através do navegador o caminho `http://localhost:3000`.
+Se estiver usando o Node com uma versão superior à 16, precisará roda o comando abaixo sempre que abrir uma nova sessão
+do terminal  ([mais informações sobre isto aqui](https://stackoverflow.com/questions/74726224/opensslerrorstack-error03000086digital-envelope-routinesinitialization-e)):
+  - Unix: `export NODE_OPTIONS=--openssl-legacy-provider`
+  - Windows: `SET NODE_OPTIONS=--openssl-legacy-provider`
+
+Caso esteja usando alguma versão do Node entre 10 (mínimo para rodar o Nextjs) e 16 (máxima para não ter que rodar o
+comando mencionado), basta rodar `npm run dev` para visualizar as mudanças feitas no código localmente. Depois disso
+é só acessar através do navegador o endereço `http://localhost:3000`.
 
 ## Geração automática de componente
 
@@ -38,6 +45,19 @@ Para verificar se todos os testes estão passando, basta rodar o comando `npm ru
 
 ## Build do projeto
 
-É possível realizar o build do projeto para verificação em ambiente de desenvolvimento, apenas para se certificar que está tudo conforme esperado. Para isso rode o comando `npm run build:dev` e ao final do processo rode o comando `npm run start` e acesse o endereço `http://localhost:3000` no seu navegador, para visualizar a aplicação como ficará em ambiente de produção.
+É possível realizar o build do projeto para verificação em ambiente de desenvolvimento, apenas para se certificar que
+está tudo conforme esperado.
 
-Para realizar o build do projeto para produção, rode o comando `npm run build:prod`. Ao final do processo será gerada a pasta .next com os arquivos para subir a aplicação online.
+Se estiver usando o Node com uma versão **superior à 16**, precisará roda o comando abaixo sempre que abrir uma nova
+sessão do terminal ([mais informações sobre isto aqui](https://stackoverflow.com/questions/74726224/opensslerrorstack-error03000086digital-envelope-routinesinitialization-e)):
+  - Unix: `export NODE_OPTIONS=--openssl-legacy-provider`
+  - Windows: `SET NODE_OPTIONS=--openssl-legacy-provider`
+
+Caso esteja usando alguma versão do Node entre 10 (mínimo para rodar o Nextjs) e 16 (máxima para não ter que rodar o
+comando mencionado), tendo isto em mente:
+
+  - Para rodar a build em ambiente de desenvolvimento, rode o comando `npm run build:dev` e ao final do processo rode o
+  comando `npm run start` e acesse o endereço `http://localhost:3000` no seu navegador, para visualizar a aplicação como
+  ficará em ambiente de produção.
+  - Para realizar o build do projeto para produção, rode o comando `npm run build:prod`. Ao final do processo será
+  gerada a pasta `.next` com os arquivos para subir a aplicação online.
